@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Dr. Asifa ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #ffdde1, #ee9ca7, #a18cd1);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: beat 1.2s infinite;
+    }
+
+    @keyframes beat {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #fff;
+      color: #c2185b;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #f8bbd0;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+
+    .floating {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .floating span {
+      position: absolute;
+      display: block;
+      color: rgba(255,255,255,0.6);
+      font-size: 20px;
+      animation: floatUp 10s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="floating">
+  <span style="left:10%">❤️</span>
+  <span style="left:20%">💖</span>
+  <span style="left:35%">💞</span>
+  <span style="left:50%">❤️</span>
+  <span style="left:65%">💖</span>
+  <span style="left:80%">💞</span>
+</div>
+
+<div class="container">
+
+  <h1>Happy Birthday Dr. Asifa 🎂</h1>
+  <div class="heart">❤️</div>
+  <div class="subtitle">A small world made only for you 💕</div>
+
+  <div class="card">
+    <h2>For the Beautiful Doctor 💉</h2>
+    <p>
+      "A doctor heals the world… but you heal hearts without even trying." 💖
+    </p>
+    <p class="quote">
+      Your kindness is your superpower, and your smile is your medicine.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>A Little Secret 🤫</h2>
+    <p>
+      One day, I won’t just call you Dr. Asifa…
+      I will proudly call you <b>my wife</b> 💍❤️
+    </p>
+    <p class="quote">
+      "Love is not what we say… it’s what we feel every day." 💞
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Birthday Surprise 🎁</h2>
+    <button onclick="show()">Open Your Surprise</button>
+    <div id="msg" class="hidden">
+      🎉 Happy Birthday to the most special person in my life 💖<br><br>
+      May your life be filled with success, peace, and endless love.<br><br>
+      And yes… your best patient is waiting for you 😉💍
+    </div>
+  </div>
+
+</div>
+
+<script>
+function show(){
+  document.getElementById('msg').style.display='block';
+}
+</script>
+
+</body>
+</html>
